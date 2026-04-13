@@ -1,0 +1,148 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+    color: #4a148c;
+}
+
+h1 {
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    animation: slideInUp 0.8s ease-out;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ce93d8;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+    text-align: center;
+}
+
+input:focus {
+    border-color: #8e24aa;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background: #8e24aa;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #7b1fa2;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+canvas {
+    display: none;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+#downloadBtn {
+    display: none;
+    margin-top: 15px;
+    background-color: #3a0d48;
+}
+
+#downloadBtn:hover {
+    background-color: #23002b;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes cardPopIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    80% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.showCard {
+    display: block !important;
+    animation: cardPopIn 1s ease-out;
+}
+
+/* --- Footer Styles --- */
+.footer {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #6a1b9a;
+    text-align: center;
+    animation: slideInUp 1s ease-out; /* Uses the same animation to appear nicely */
+}
+
+.footer a {
+    color: #8e24aa;
+    text-decoration: none; /* Removes the default underline */
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* What happens when the mouse goes over the link */
+.footer a:hover {
+    color: #d81b60; /* Changes to a nice pinkish/red color */
+    text-decoration: underline;
+}
