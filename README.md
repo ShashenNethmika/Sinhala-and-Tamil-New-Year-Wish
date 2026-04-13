@@ -17,8 +17,8 @@ A simple, interactive, and mobile-responsive web application that allows users t
 
 ## 🚀 Live Demo
 
-Check out the live project here: [Click to view Live Demo](https://your-username.github.io/new-year-card/) 
-*(Note: Replace `your-username` with your actual GitHub username).*
+Check out the live project here: [Click to view Live Demo](https://shashennethmika.github.io/Sinhala-and-Tamil-New-Year-Wish/) 
+*(Note: Replace `ShashenNethmika` with your actual GitHub username).*
 
 ## 💻 How to Run Locally
 
