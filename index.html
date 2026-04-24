@@ -22,9 +22,29 @@
 
     <button id="downloadBtn" onclick="downloadImage()">Download Your Image</button>
 
-    <div class="footer">
-        Made By <a href="https://linktr.ee/Shashen_Nethmika" target="_blank" rel="noopener noreferrer">Shashen Nethmika ❤️</a>
+    <div id="donate-modal" class="modal">
+        <div class="modal-content" id="modal-content">
+            <button id="close-modal" class="close-btn">✕</button>
+            <h3>Support My Work 🪷</h3>
+            <p class="modal-text">If you enjoyed using this Vesak Card Generator, consider buying me a coffee or sending
+                a small donation to support future projects!</p>
+
+            <div class="qr-container">
+                <img src="donate-qr.jpg" alt="Donation QR Code"
+                    onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 200 200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23fed7aa\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' font-family=\'sans-serif\' font-size=\'14\' fill=\'%23c2410c\' text-anchor=\'middle\' dy=\'.3em\'%3EAdd donate-qr.png%3C/text%3E%3C/svg%3E'">
+            </div>
+
+            <p class="modal-footer-text">Scan this QR code using your Banking App, LANKAQR, or Crypto Wallet.</p>
+        </div>
     </div>
+
+    <footer class="footer">
+        <button id="donate-btn" class="btn-donate">☕ Tea Ekak Bonna Kiyak Hari Denna 🥲</button>
+        <div class="footer-content">
+            <p>Made By <a href="https://linktr.ee/Shashen_Nethmika" target="_blank" rel="noopener noreferrer">Shashen
+                    Nethmika</a> <span class="heart-pulse">💜</span></p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
