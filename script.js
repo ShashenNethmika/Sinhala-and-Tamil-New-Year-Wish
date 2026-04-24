@@ -31,3 +31,26 @@ function downloadImage() {
     link.href = canvas.toDataURL("image/png");
     link.click();
 }
+// --- Donation Modal Logic ---
+const donateBtn = document.getElementById('donate-btn');
+const donateModal = document.getElementById('donate-modal');
+const closeModal = document.getElementById('close-modal');
+
+// Open Modal
+donateBtn.addEventListener('click', () => {
+    donateModal.classList.add('show');
+});
+
+// Close Modal Function
+const hideModal = () => {
+    donateModal.classList.remove('show');
+};
+
+closeModal.addEventListener('click', hideModal);
+
+// Close when clicking outside the popup
+donateModal.addEventListener('click', (e) => {
+    if (e.target === donateModal) {
+        hideModal();
+    }
+});
